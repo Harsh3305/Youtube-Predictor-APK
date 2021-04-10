@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Youtube Predictor</string>
+    <string name="categoryid">categoryId</string>
+    <string name="view_count">view_count</string>
+    <string name="video_count">video_count</string>
+    <string name="subscriber_count">subscriber_count</string>
+    <string name="video_titile">video_titile</string>
+    <string name="description">description</string>
+</resources>
