@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class Result extends AppCompatActivity {
 
     @Override
@@ -18,18 +20,12 @@ public class Result extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
 
-        Intent intent = getIntent();
-        String result = intent.getExtras().getString("likes");
-
-
+        ArrayList<String> numbersList = (ArrayList<String>) getIntent().getSerializableExtra("Result");
+        String likeResult = numbersList.get(0);
+//        String categoryId = numbersList.get(1);
         TextView likes = findViewById(R.id.likes);
-
-        likes.setText(result);
-
+        likes.setText("Predicted Likes are: " + likeResult);
         ImageButton back = findViewById(R.id.back);
-
         back.setOnClickListener(v -> finish());
-
-
     }
 }

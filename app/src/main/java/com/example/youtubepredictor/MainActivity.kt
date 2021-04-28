@@ -42,15 +42,13 @@ class MainActivity : AppCompatActivity() {
         val url = "https://youtube-predictor.herokuapp.com/"
 
         // Request a string response from the provided URL.
-        val stringRequest = StringRequest(Request.Method.GET, url, Response.Listener<String> { response ->
+        val stringRequest = StringRequest(Request.Method.GET, url, { response ->
                     // Display the first 500 characters of the response string.
                     moveToNextScreen()
-                }, Response.ErrorListener {
+                }, {
                 textView.visibility = View.VISIBLE
-                textView.text = "Something went Wrong"
+                textView.text = getString(R.string.server_not_found)
         })
-
-        // Add the request to the RequestQueue.
         queue.add(stringRequest)
     }
 }

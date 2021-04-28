@@ -5,85 +5,98 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Home">
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
+    <ImageButton
+        android:id="@+id/NextButton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:rotationY="180"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/description" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        app:srcCompat="@drawable/abc_vector_test" />
 
     <EditText
-        android:id="@+id/categoryId"
+        android:id="@+id/channel_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:hint="@string/categoryid"
+        android:hint="@string/name_of_the_channel"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/view_count"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/view_count"
-        app:layout_constraintBottom_toTopOf="@+id/video_count"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/categoryId" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066" />
 
     <EditText
         android:id="@+id/video_count"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
         android:ems="10"
-        android:hint="@string/video_count"
+        android:hint="@string/number_of_videos_of_channel"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/NextButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/categoryId" />
+        app:layout_constraintTop_toBottomOf="@+id/channel_name"
+        app:layout_constraintVertical_bias="0.081" />
+
+    <EditText
+        android:id="@+id/total_views"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/total_views_of_the_channel"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/NextButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/video_count"
+        app:layout_constraintVertical_bias="0.101" />
 
     <EditText
         android:id="@+id/subscriber_count"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/subscriber_count"
-        app:layout_constraintBottom_toTopOf="@+id/video_titile"
+        android:hint="@string/total_subscriber_of_the_channel"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/NextButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/video_count" />
+        app:layout_constraintTop_toBottomOf="@+id/total_views"
+        app:layout_constraintVertical_bias="0.12" />
 
     <EditText
         android:id="@+id/video_titile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/video_titile"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.556" />
+        android:hint="@string/title_of_the_video"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/NextButton"
+        app:layout_constraintTop_toBottomOf="@+id/subscriber_count"
+        app:layout_constraintVertical_bias="0.158"
+        tools:layout_editor_absoluteX="16dp" />
 
     <EditText
         android:id="@+id/description"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="108dp"
+        android:layout_height="165dp"
         android:ems="10"
-        android:hint="@string/description"
+        android:inputType="text|textMultiLine"
+        android:hint="@string/description_of_te_video"
+        app:layout_constraintBottom_toTopOf="@+id/NextButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/video_titile" />
+        app:layout_constraintTop_toBottomOf="@+id/video_titile"
+        app:layout_constraintVertical_bias="0.556" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,4 +6,13 @@
     <string name="subscriber_count">subscriber_count</string>
     <string name="video_titile">video_titile</string>
     <string name="description">description</string>
+    <string name="server_not_found">Something went Wrong</string>
+    <string name="number_of_videos_of_channel">Number of videos of channel</string>
+    <string name="total_views_of_the_channel">Total Views of the channel</string>
+    <string name="name_of_the_channel">Name of the channel</string>
+    <string name="total_subscriber_of_the_channel">Total subscriber of the channel</string>
+    <string name="description_of_te_video">Description of te video</string>
+    <string name="title_of_the_video">Title of the video</string>
+    <string name="please_select_category_of_video">Please select category of video</string>
+    <string name="select_category_of_the_video">Select category of the video</string>
 </resources>

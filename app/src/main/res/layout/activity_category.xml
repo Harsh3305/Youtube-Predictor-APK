@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Category">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/select_category_of_the_video"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="628dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0">
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical" >
+
+                            <Button
+                                style="@style/RbButton.Inverse.Rounded.Red"
+                                android:text="Film And Animation"
+                                android:layout_margin="10dp"
+                                android:id="@+id/_1"/>
+                            <Button
+                                style="@style/RbButton.Inverse.Rounded.Red"
+                                android:layout_margin="10dp"
+                                android:text="Autos And Vehicles"
+                                android:id="@+id/_2"/>
+                            <Button
+                                style="@style/RbButton.Inverse.Rounded.Red"
+                                android:layout_margin="10dp"
+                                android:text="Music"
+                                android:id="@+id/_10"/>
+                            <Button
+                                style="@style/RbButton.Inverse.Rounded.Red"
+                                android:layout_margin="10dp"
+                                android:text="Pets And Animals"
+                                android:id="@+id/_15"/>
+                            <Button
+                                style="@style/RbButton.Inverse.Rounded.Red"
+                                android:layout_margin="10dp"
+                                android:text="Sports"
+                                android:id="@+id/_17"/>
+                            <Button
+                                style="@style/RbButton.Inverse.Rounded.Red"
+                                android:layout_margin="10dp"
+                                android:text="Short Movies"
+                                android:id="@+id/_18"/>
+                            <Button
+                                style="@style/RbButton.Inverse.Rounded.Red"
+                                android:layout_margin="10dp"
+                                android:text="Travel And Eventsn"
+                                android:id="@+id/_19"/>
+                            <Button
+                                style="@style/RbButton.Inverse.Rounded.Red"
+                                android:layout_margin="10dp"
+                                android:text="Gaming"
+                                android:id="@+id/_20"/>
+                            <Button
+                                style="@style/RbButton.Inverse.Rounded.Red"
+                                android:layout_margin="10dp"
+                                android:text="Videoblogging"
+                                android:id="@+id/_21"/>
+                            <Button
+                                style="@style/RbButton.Inverse.Rounded.Red"
+                                android:layout_margin="10dp"
+                                android:text="People And Blogs"
+                                android:id="@+id/_22"/>
+                            <Button
+                                style="@style/RbButton.Inverse.Rounded.Red"
+                                android:text="Comedy"
+                                android:layout_margin="10dp"
+                                android:id="@+id/_23"/>
+                            <Button
+                                style="@style/RbButton.Inverse.Rounded.Red"
+                                android:layout_margin="10dp"
+                                android:text="Entertainment"
+                                android:id="@+id/_24"/>
+                            <Button
+                                style="@style/RbButton.Inverse.Rounded.Red"
+                                android:layout_margin="10dp"
+                                android:text="News And Politics"
+                                android:id="@+id/_25"/>
+                            <Button
+                                style="@style/RbButton.Inverse.Rounded.Red"
+                                android:layout_margin="10dp"
+                                android:text="Howto And Style"
+                                android:id="@+id/_26"/>
+                            <Button
+                                style="@style/RbButton.Inverse.Rounded.Red"
+                                android:layout_margin="10dp"
+                                android:text="Education"
+                                android:id="@+id/_27"/>
+                            <Button
+                                style="@style/RbButton.Inverse.Rounded.Red"
+                                android:layout_margin="10dp"
+                                android:text="Science And Technology"
+                                android:id="@+id/_28"/>
+                            <Button
+                                style="@style/RbButton.Inverse.Rounded.Red"
+                                android:text="Nonprofits And Activism"
+                                android:layout_margin="10dp"
+                                android:id="@+id/_29"/>
+                            <Button
+                                style="@style/RbButton.Inverse.Rounded.Red"
+                                android:layout_margin="10dp"
+                                android:text="Movies"
+                                android:id="@+id/_30"/>
+                            <Button
+                                style="@style/RbButton.Inverse.Rounded.Red"
+                                android:layout_margin="10dp"
+                                android:text="Anime/Animation"
+                                android:id="@+id/_31"/>
+                            <Button
+                                style="@style/RbButton.Inverse.Rounded.Red"
+                                android:layout_margin="10dp"
+                                android:text="Action/Adventure"
+                                android:id="@+id/_32"/>
+                            <Button
+                                style="@style/RbButton.Inverse.Rounded.Red"
+                                android:layout_margin="10dp"
+                                android:text="Classics"
+                                android:id="@+id/_33"/>
+                            <Button
+                                style="@style/RbButton.Inverse.Rounded.Red"
+                                android:layout_margin="10dp"
+                                android:text="Comedy"
+                                android:id="@+id/_34"/>
+                            <Button
+                                style="@style/RbButton.Inverse.Rounded.Red"
+                                android:layout_margin="10dp"
+                                android:text="Documentary"
+                                android:id="@+id/_35"/>
+                            <Button
+                                style="@style/RbButton.Inverse.Rounded.Red"
+                                android:text="Drama"
+                                android:layout_margin="10dp"
+                                android:id="@+id/_36"/>
+                            <Button
+                                style="@style/RbButton.Inverse.Rounded.Red"
+                                android:layout_margin="10dp"
+                                android:text="Family"
+                                android:id="@+id/_37"/>
+                            <Button
+                                style="@style/RbButton.Inverse.Rounded.Red"
+                                android:text="Foreign"
+                                android:layout_margin="10dp"
+                                android:id="@+id/_38"/>
+                            <Button
+                                style="@style/RbButton.Inverse.Rounded.Red"
+                                android:text="Horror"
+                                android:layout_margin="10dp"
+                                android:id="@+id/_39"/>
+                            <Button
+                                style="@style/RbButton.Inverse.Rounded.Red"
+                                android:text="Sci-Fi/Fantasy"
+                                android:layout_margin="10dp"
+                                android:id="@+id/_40"/>
+                            <Button
+                                style="@style/RbButton.Inverse.Rounded.Red"
+                                android:layout_margin="10dp"
+                                android:text="Thriller"
+                                android:id="@+id/_41"/>
+                            <Button
+                                style="@style/RbButton.Inverse.Rounded.Red"
+                                android:layout_margin="10dp"
+                                android:text="Shorts"
+                                android:id="@+id/_42"/>
+                            <Button
+                                style="@style/RbButton.Inverse.Rounded.Red"
+                                android:text="Shows"
+                                android:layout_margin="10dp"
+                                android:id="@+id/_43"/>
+
+
+            </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
