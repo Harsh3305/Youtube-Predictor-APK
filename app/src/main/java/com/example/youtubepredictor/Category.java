@@ -179,7 +179,8 @@ public class Category extends AppCompatActivity {
         obj.put("video_title", video_title_text);
         obj.put("description",description_text);
 
-        String url = "https://youtube-predictor.herokuapp.com/PredictLikes";
+        String url = "https://flasktut.azurewebsites.net";
+//         String url = "https://youtube-predictor.herokuapp.com/PredictLikes";
 
         JsonObjectRequest request_json = new JsonObjectRequest(URL, new JSONObject(obj),
                 response -> {
